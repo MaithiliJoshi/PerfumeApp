@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">My Perfumes App</string>
     <string name="see_my_perfumes">See my Perfumes</string>
-    <string name="go_to_my_perfumes">My perfumes</string>
+    <string name="go_to_my_perfumes">My Perfumes</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>

@@ -1,6 +1,7 @@
 package com.example.perfumeapp.fragments
 
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -64,6 +65,7 @@ class PerfumeDashboard : Fragment() {
 
         dashboardViewModel.perfumeData.observe(viewLifecycleOwner, Observer {
             it?.let{
+                Log.d("perfume dashboard","List of perfumes is - ${it.size}")
                 adapter.data = it
             }
         })
