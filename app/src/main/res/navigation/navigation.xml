@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools" android:id="@+id/navigation"
+            app:startDestination="@id/landingFragment">
+    <fragment android:id="@+id/landingFragment"
+              android:name="com.example.perfumeapp.fragments.LandingFragment"
+              android:label="fragment_landing2"
+              tools:layout="@layout/fragment_landing2">
+        <action android:id="@+id/action_landingFragment_to_perfumeDashboard" app:destination="@id/perfumeDashboard"/>
+    </fragment>
+    <fragment android:id="@+id/perfumeDashboard" android:name="com.example.perfumeapp.fragments.PerfumeDashboard"
+              android:label="fragment_perfume_dashboard" tools:layout="@layout/fragment_perfume_dashboard">
+        <action android:id="@+id/action_perfumeDashboard_to_perfumeDetail" app:destination="@id/perfumeDetail"/>
+    </fragment>
+    <fragment android:id="@+id/perfumeDetail" android:name="com.example.perfumeapp.fragments.PerfumeDetail"
+              android:label="fragment_perfume_detail2" tools:layout="@layout/fragment_perfume_detail2">
+        <argument android:name="perfume" app:argType="com.example.perfumeapp.database.Perfume"/>
+    </fragment>
+</navigation>
